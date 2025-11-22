@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TYR9 — One Hand. One War. One God.</title>
-    <meta name="description" content="TYR9 — The Solana memecoin forged in blood and honor. LP burned. Contract renounced. No taxes.">
+    <title>TYR9 — Tokenomics</title>
+    <meta name="description" content="TYR9 Tokenomics — 100% fair launch. LP burned. Contract renounced. No taxes.">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
@@ -157,8 +157,8 @@
             text-align: center;
         }
 
-        /* HERO */
-        .hero {
+        /* TOKENOMICS PAGE CONTENT */
+        .tokenomics-page {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -170,119 +170,56 @@
             padding: 0 2rem;
             padding-top: 90px;
         }
-        .header.scrolled ~ .hero {
+        .header.scrolled ~ .tokenomics-page {
             padding-top: 70px;
         }
-        .hero h1 {
+        .tokenomics-page h1 {
             font-family: 'Cinzel Decorative', cursive;
-            font-size: 14vw;
-            letter-spacing: 8px;
+            font-size: 6rem;
+            margin-bottom: 2rem;
             background: linear-gradient(90deg, #fff, var(--blood), #fff);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 0 0 60px rgba(255,26,26,0.6);
-            margin-bottom: 1rem;
-            line-height: 1;
         }
-        .hero p {
-            font-size: 1.4rem;
+        .tokenomics-page p.lead {
+            font-size: 1.5rem;
             max-width: 800px;
+            margin: 0 auto 4rem;
             opacity: 0.9;
-            margin: 2rem 0;
-        }
-        .stats {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 3rem;
-            margin: 3rem 0;
-        }
-        .stat { text-align: center; }
-        .stat h3 { font-size: 1.2rem; color: var(--blood); margin-bottom: 0.5rem; }
-        .stat p { font-size: 1.6rem; font-weight: 700; }
-
-        .cta {
-            background: var(--blood);
-            color: #000;
-            font-weight: 900;
-            padding: 1.5rem 4rem;
-            font-size: 1.8rem;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 0 60px rgba(255,26,26,0.7);
-            transition: all 0.4s;
-            letter-spacing: 3px;
-            margin-top: 2rem;
-        }
-        .cta:hover { transform: scale(1.05); box-shadow: 0 0 100px rgba(255,26,26,1); background: #fff; }
-
-        .god-image {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            max-width: 900px;
-            opacity: 0.6;
-            pointer-events: none;
-            z-index: 1;
         }
 
-        section { padding: 8rem 2rem; text-align: center; }
-        h2 {
-            font-family: 'Cinzel Decorative', cursive;
-            font-size: 3.5rem;
-            margin-bottom: 3rem;
-            color: var(--blood);
-        }
         .tokenomics-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 4rem auto;
         }
-        .box {
+        .t-box {
             background: rgba(255,26,26,0.05);
             border: 1px solid rgba(255,26,26,0.3);
             padding: 3rem 2rem;
             transition: all 0.4s;
         }
-        .box:hover { border-color: var(--blood); box-shadow: 0 0 40px rgba(255,26,26,0.3); }
-
-        .follow-section {
-            padding: 8rem 2rem;
-            background: linear-gradient(135deg, #111 0%, #000 100%);
+        .t-box:hover {
+            border-color: var(--blood);
+            box-shadow: 0 0 50px rgba(255,26,26,0.4);
+            transform: translateY(-10px);
         }
-        .follow-section h2 {
-            font-size: 4.5rem;
-            text-shadow: 0 0 40px rgba(255,26,26,0.6);
-        }
-        .follow-section p {
-            font-size: 1.6rem;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-        }
-        .x-button {
-            display: inline-block;
-            background: var(--blood);
-            color: #000;
-            font-weight: 900;
+        .t-box h3 {
+            font-family: 'Cinzel Decorative', cursive;
             font-size: 2rem;
-            padding: 1.5rem 4rem;
-            text-decoration: none;
-            box-shadow: 0 0 80px rgba(255,26,26,0.7);
-            transition: all 0.4s;
-            letter-spacing: 3px;
+            color: var(--blood);
+            margin-bottom: 1rem;
         }
-        .x-button:hover {
-            transform: scale(1.08);
-            box-shadow: 0 0 120px rgba(255,26,26,1);
-            background: #fff;
+        .t-box p {
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
-        .x-button i { margin-right: 1rem; font-size: 2.5rem; vertical-align: middle; }
 
+        /* FOOTER — IDENTICAL */
         .footer {
             background: #000;
             padding: 6rem 2rem 4rem;
@@ -346,42 +283,15 @@
             .hamburger { display: block; font-size: 2rem; padding: 8px; }
             .mobile-menu { top: 80px; }
 
-            .hero { padding-top: 80px; }
-            .header.scrolled ~ .hero { padding-top: 70px; }
-            .hero h1 { font-size: 12vw; margin-top: 4rem; }
-            .hero p { font-size: 1.2rem; }
-            .cta { font-size: 1.6rem; padding: 1.2rem 3rem; }
-
-            .follow-section h2 { font-size: 3.5rem; }
-            .follow-section p { font-size: 1.3rem; }
-            .x-button { font-size: 1.6rem; padding: 1.2rem 3rem; }
-
-            .ca-display, .ca-display-footer {
-                font-size: 0.8rem;
-                padding: 1rem;
-                max-width: 90%;
-            }
+            .tokenomics-page { padding-top: 80px; }
+            .header.scrolled ~ .tokenomics-page { padding-top: 70px; }
+            .tokenomics-page h1 { font-size: 4rem; }
+            .tokenomics-page p.lead { font-size: 1.2rem; }
 
             .footer-container { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
             .footer-left h3 { font-size: 2.8rem; }
             .footer-logo { height: 50px; }
             .footer-right { text-align: center; }
-        }
-
-        /* NEW SECTION: FOR THE PEOPLE */
-        .people-section {
-            padding: 8rem 2rem;
-            background: linear-gradient(135deg, #000 0%, #111 100%);
-        }
-        .people-section h2 {
-            font-size: 4.5rem;
-            text-shadow: 0 0 40px rgba(255,26,26,0.6);
-        }
-        .people-section p {
-            font-size: 1.6rem;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            opacity: 0.9;
         }
     </style>
 </head>
@@ -417,53 +327,29 @@
         </div>
     </header>
 
-    <section class="hero">
-        <h1>TYR9</h1>
-        <p>The One-Handed God of War returns.<br>LP burned. Contract renounced. No taxes. Limited supply.</p>
-        
-        <div class="stats">
-            <div class="stat"><h3>Total Supply</h3><p>999,999,999</p></div>
-            <div class="stat"><h3>Liquidity</h3><p>BURNED FOREVER</p></div>
-            <div class="stat"><h3>Contract</h3><p>RENOUNCED</p></div>
-        </div>
+    <!-- TOKENOMICS PAGE CONTENT -->
+    <section class="tokenomics-page">
+        <h1>TOKENOMICS</h1>
+        <p class="lead">Forged for fairness. Burned for eternity. No taxes. No bullshit.</p>
 
-        <button class="cta" onclick="window.open('https://jup.ag/swap/SOL-TYR9', '_blank')">
-            ENTER THE ARENA
-        </button>
-
-        <img src="https://via.placeholder.com/1200x800/000000/FF1A1A?text=ONE+HANDED+GOD+OF+WAR" class="god-image" alt="Tyr">
-    </section>
-
-    <section id="tokenomics">
-        <h2>TOKENOMICS</h2>
         <div class="tokenomics-grid">
-            <div class="box"><h3>999,999,999 TOTAL SUPPLY</h3><p>No more will ever exist.</p></div>
-            <div class="box"><h3>LIQUIDITY BURNED</h3><p>Sent to Helheim. Gone forever.</p></div>
-            <div class="box"><h3>CONTRACT RENOUNCED</h3><p>Even the gods cannot rug.</p></div>
-            <div class="box"><h3>0% TAX</h3><p>Every sat belongs to the warriors.</p></div>
+            <div class="t-box">
+                <h3>999,999,999</h3>
+                <p>Total Supply — No more will ever exist.</p>
+            </div>
+            <div class="t-box">
+                <h3>LIQUIDITY BURNED</h3>
+                <p>Sent to Helheim the moment we launched. Gone forever.</p>
+            </div>
+            <div class="t-box">
+                <h3>CONTRACT RENOUNCED</h3>
+                <p>Even the gods cannot change it. True community ownership.</p>
+            </div>
+            <div class="t-box">
+                <h3>0% TAX</h3>
+                <p>Buy. Sell. Hold. Every satoshi stays with the warriors.</p>
+            </div>
         </div>
-    </section>
-
-    <section id="buy">
-        <h2>BUY $TYR9</h2>
-        <div class="ca-display">7r9R5CyumQxcNSvCooejeTuoggdDk86ZZqsCmb6ER6RK</div>
-        <p style="margin:3rem 0;font-size:1.6rem;">
-            <a href="https://jup.ag/swap/SOL-TYR9" target="_blank" style="color:var(--blood);text-decoration:none;margin:0 1rem;">JUPITER</a>
-            <a href="https://dexscreener.com/solana/yourpairhere" target="_blank" style="color:#fff;text-decoration:none;margin:0 1rem;">DEXSCREENER</a>
-        </p>
-    </section>
-
-    <section class="people-section">
-        <h2>FOR THE PEOPLE</h2>
-        <p>TYR9 is forged in the fires of community honor, not personal greed. No team tokens. No insider allocations. 100% fair launch for warriors like you. We rise together to Valhalla—or fall as one. Join the raid where every holder is a god among men.</p>
-    </section>
-
-    <section class="follow-section">
-        <h2>FOLLOW US ON X FOR UPDATES</h2>
-        <p>Real-time raids, memes, pumps, and war cries. Don’t miss the next leg to Valhalla.</p>
-        <a href="https://x.com/tyr9_sol" target="_blank" class="x-button">
-            <i class="fab fa-x-twitter"></i> FOLLOW @tyr9_sol
-        </a>
     </section>
 
     <footer class="footer">
