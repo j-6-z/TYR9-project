@@ -159,7 +159,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             text-align: center;
             background: radial-gradient(circle at center, #111 0%, #000 70%);
             position: relative;
@@ -184,6 +184,47 @@
             width: auto;
             filter: drop-shadow(0 0 20px rgba(255,26,26,0.6));
             margin-bottom: 2rem;
+        }
+
+        /* NEW SECTIONS */
+        .section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .section h3 {
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 2.5rem;
+            color: var(--blood);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        .feature-box {
+            background: rgba(255,26,26,0.05);
+            border: 1px solid rgba(255,26,26,0.3);
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.4s;
+        }
+        .feature-box:hover {
+            border-color: var(--blood);
+            box-shadow: 0 0 40px rgba(255,26,26,0.3);
+        }
+        .feature-box h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .footer {
@@ -257,6 +298,9 @@
                 max-width: 90%;
             }
 
+            .section h3 { font-size: 2.2rem; }
+            .features-grid { gap: 2rem; }
+
             .footer-container { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
             .footer-left h3 { font-size: 2.8rem; }
             .footer-logo { height: 50px; }
@@ -269,6 +313,8 @@
             .footer { padding: 6rem 1.5rem 4rem; }
             .footer-container { gap: 4rem; }
             .main-logo { height: 150px; }
+            .section { padding: 0 1.5rem; margin: 3rem auto; }
+            .feature-box { padding: 1.5rem; }
         }
 
         @media (max-width: 480px) {
@@ -279,6 +325,8 @@
             .footer { padding: 5rem 1rem 3rem; }
             .footer-container { gap: 3rem; }
             .main-logo { height: 120px; }
+            .section h3 { font-size: 1.8rem; }
+            .section p { font-size: 1rem; }
         }
     </style>
 </head>
@@ -322,6 +370,45 @@
         <p class="tagline">Forged on Solana to Valhalla or to zero.</p>
         <div class="ca-display">
             7r9R5CyumQxcNSvCooejeTuoggdDk86ZZqsCmb6ER6RK
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <h3>About TYR9</h3>
+        <p>Inspired by Týr, the Norse god of war, justice, and heroic glory, who sacrificed his hand to bind the monstrous wolf Fenrir, $TYR9 is a memecoin built on the Solana blockchain. It represents courage, sacrifice, and unyielding determination in the face of chaos.</p>
+        <p>Launched as an anti-corrupt, community-driven token, $TYR9 stands against taxes and centralized control. Created by the people, for the people, with red hands only—symbolizing the blood of battle and commitment to the cause.</p>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="section" id="features">
+        <h3>Key Features</h3>
+        <div class="features-grid">
+            <div class="feature-box">
+                <h4>Tax Free</h4>
+                <p>0% taxes on buys, sells, and transfers. Keep every satoshi you earn.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Limited Supply</h4>
+                <p>9,999,999,999 total tokens—no more will ever be minted.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Fair Launch</h4>
+                <p>100% fair launch with LP burned and contract renounced for true community ownership.</p>
+            </div>
+            <div class="feature-box">
+                <h4>Solana Powered</h4>
+                <p>Fast, low-cost transactions on the Solana network.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section class="section" id="community">
+        <h3>Join the Warriors</h3>
+        <p>Become part of the $TYR9 community. Follow us on X for updates, memes, and battles. Together, we march to Valhalla—or to zero. No middle ground.</p>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://x.com/tyr9_sol" target="_blank" style="color: var(--blood); font-size: 1.2rem; text-decoration: none; font-weight: bold;">Join on X</a>
         </div>
     </section>
 
