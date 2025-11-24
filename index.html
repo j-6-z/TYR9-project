@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TYR9 — Tokenomics</title>
-    <meta name="description" content="TYR9 Tokenomics — 100% fair launch. LP burned. Contract renounced. No taxes.">
+    <title>TYR9 — One Hand. One War. One God.</title>
+    <meta name="description" content="TYR9 — The Solana memecoin forged in blood and honor. LP burned. Contract renounced. No taxes.">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
@@ -22,17 +22,16 @@
 
         /* HEADER */
         .header {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            height: 90px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 80px;
             background: rgba(10,10,10,0.95);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255,26,26,0.3);
             z-index: 1000;
             padding: 0 2rem;
-            transition: all 0.4s;
         }
-        .header.scrolled { height: 70px; }
         .header-inner {
             height: 100%;
             display: flex;
@@ -46,7 +45,7 @@
         }
         .header-left {
             font-family: 'Cinzel Decorative', cursive;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             background: linear-gradient(90deg, #fff, var(--blood));
             -webkit-background-clip: text;
             background-clip: text;
@@ -59,7 +58,7 @@
             transform: translate(-50%, -50%);
         }
         .header-logo-img {
-            height: 70px;
+            height: 60px;
             width: auto;
             filter: drop-shadow(0 0 20px rgba(255,26,26,0.6));
             transition: transform 0.3s;
@@ -84,7 +83,7 @@
             cursor: pointer;
             background: none;
             border: none;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             color: var(--blood);
             padding: 12px;
             position: relative;
@@ -108,7 +107,7 @@
             display: flex;
             flex-direction: column;
             position: fixed;
-            top: 90px;
+            top: 80px;
             left: 0;
             right: 0;
             background: #000;
@@ -117,15 +116,12 @@
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
-            transition: all 0.35s ease, top 0s;
+            transition: all 0.35s ease;
         }
         .mobile-menu.active {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
-        }
-        .header.scrolled .mobile-menu {
-            top: 70px;
         }
 
         .mobile-menu a {
@@ -157,51 +153,38 @@
             text-align: center;
         }
 
-        /* TOKENOMICS PAGE CONTENT */
-        .tokenomics-page {
+        /* HOME PAGE CONTENT */
+        .home-page {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             text-align: center;
             background: radial-gradient(circle at center, #111 0%, #000 70%);
             position: relative;
             padding: 0 2rem;
-            padding-top: 90px;
             padding-bottom: 8rem;
         }
-        .header.scrolled ~ .tokenomics-page {
-            padding-top: 70px;
-        }
-        .tokenomics-page h2 {
+        .home-page h2 {
             font-family: 'Cinzel Decorative', cursive;
             font-size: 3rem;
             margin-bottom: 3rem;
             color: var(--blood);
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
-        .tokenomics-page p.lead {
+        .home-page p.lead {
             font-size: 1.4rem;
             max-width: 800px;
             margin: 2rem auto 4rem;
             opacity: 0.9;
         }
-
-        .tokenomics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 3rem;
-            max-width: 1200px;
-            margin: 0 auto 5rem;
+        .main-logo {
+            height: 200px;
+            width: auto;
+            filter: drop-shadow(0 0 20px rgba(255,26,26,0.6));
+            margin-bottom: 2rem;
         }
-        .box {
-            background: rgba(255,26,26,0.05);
-            border: 1px solid rgba(255,26,26,0.3);
-            padding: 3rem 2rem;
-            transition: all 0.4s;
-        }
-        .box:hover { border-color: var(--blood); box-shadow: 0 0 40px rgba(255,26,26,0.3); }
 
         .footer {
             background: #000;
@@ -257,19 +240,16 @@
         .footer-right p { margin-top: 2rem; opacity: 0.6; font-size: 0.9rem; }
 
         @media (max-width: 1024px) {
-            .header { height: 80px; padding: 0 1.5rem; }
-            .header.scrolled { height: 70px; }
+            .header { padding: 0 1.5rem; }
             .header-dummy-left { display: block; width: 60px; }
             .header-left { display: none; }
-            .header-logo-img { height: 55px; }
+            .header-logo-img { height: 50px; }
             .nav-desktop { display: none; }
             .hamburger { display: block; font-size: 2rem; padding: 8px; }
             .mobile-menu { top: 80px; }
 
-            .tokenomics-page { padding-top: 80px; }
-            .header.scrolled ~ .tokenomics-page { padding-top: 70px; }
-            .tokenomics-page h2 { font-size: 2.5rem; }
-            .tokenomics-page p.lead { font-size: 1.2rem; }
+            .home-page h2 { font-size: 2.5rem; margin-top: 3rem; }
+            .home-page p.lead { font-size: 1.2rem; }
 
             .ca-display, .ca-display-footer {
                 font-size: 0.8rem;
@@ -284,30 +264,21 @@
         }
 
         @media (max-width: 768px) {
-            .tokenomics-page h2 { font-size: 2.2rem; }
-            .tokenomics-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 2.5rem;
-            }
-            .box {
-                padding: 2rem 1.5rem;
-            }
-            .tokenomics-page { padding: 0 1.5rem; padding-bottom: 8rem; }
+            .home-page h2 { font-size: 2.2rem; }
+            .home-page { padding: 0 1.5rem; padding-bottom: 8rem; }
             .footer { padding: 6rem 1.5rem 4rem; }
             .footer-container { gap: 4rem; }
+            .main-logo { height: 150px; }
         }
 
         @media (max-width: 480px) {
-            .tokenomics-page h2 { font-size: 2rem; }
-            .tokenomics-page p.lead { font-size: 1rem; }
-            .tokenomics-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
+            .home-page h2 { font-size: 2rem; }
+            .home-page p.lead { font-size: 1rem; }
             .mobile-menu a { font-size: 1.6rem; padding: 1.2rem; }
             .ca-display, .ca-display-footer { font-size: 0.7rem; }
             .footer { padding: 5rem 1rem 3rem; }
             .footer-container { gap: 3rem; }
+            .main-logo { height: 120px; }
         }
     </style>
 </head>
@@ -343,16 +314,14 @@
         </div>
     </header>
 
-    <!-- TOKENOMICS PAGE CONTENT -->
-    <section class="tokenomics-page">
-        <h2>TOKENOMICS</h2>
-        <p class="lead">Forged for fairness. Burned for eternity. No taxes. No bullshit.</p>
-
-        <div class="tokenomics-grid">
-            <div class="box"><h3>9,999,999,999 TOTAL SUPPLY</h3><p>No more will ever exist.</p></div>
-            <div class="box"><h3>LIQUIDITY BURNED</h3><p>Sent to Helheim the moment we launched. Gone forever.</p></div>
-            <div class="box"><h3>CONTRACT RENOUNCED</h3><p>Even the gods cannot change it. True community ownership.</p></div>
-            <div class="box"><h3>0% TAX</h3><p>Buy. Sell. Hold. Every satoshi stays with the warriors.</p></div>
+    <!-- HOME PAGE CONTENT -->
+    <section class="home-page">
+        <img src="https://i.ibb.co/1Y7CZQH6/tyr9logo2.png" alt="TYR9 Logo" class="main-logo">
+        <h2>TYR9</h2>
+        <p class="lead">One Hand. One War. One God.</p>
+        <p class="tagline">Forged on Solana to Valhalla or to zero.</p>
+        <div class="ca-display">
+            7r9R5CyumQxcNSvCooejeTuoggdDk86ZZqsCmb6ER6RK
         </div>
     </section>
 
@@ -381,7 +350,6 @@
     </footer>
 
     <script>
-        const header = document.getElementById('header');
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
 
@@ -395,10 +363,6 @@
                 mobileMenu.classList.remove('active');
                 hamburger.classList.remove('active');
             });
-        });
-
-        window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 50);
         });
     </script>
 </body>
