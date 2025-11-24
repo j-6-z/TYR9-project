@@ -1,0 +1,30 @@
+{
+  "name": "Your Token Name",
+  "symbol": "YOURSYMBOL",
+  "description": "Detailed description here.",
+  "image": "https://example.com/path/to/image.png",
+  "external_url": "https://your-site.com",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "Utility"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://example.com/additional-file.pdf",
+        "type": "application/pdf"
+      }
+    ],
+    "category": "image"
+  },
+  "collection": {
+    "name": "Your Collection Name",
+    "family": "Your Token Family"
+  }
+}
