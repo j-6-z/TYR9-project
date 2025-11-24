@@ -1,7 +1,19 @@
 {
   "builds": [
     {
-      "src": "*.html",
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.txt",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.png",
       "use": "@vercel/static"
     }
   ],

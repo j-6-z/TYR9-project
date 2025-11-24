@@ -1,30 +1,46 @@
 {
-  "name": "Your Token Name",
-  "symbol": "YOURSYMBOL",
-  "description": "Detailed description here.",
-  "image": "https://example.com/path/to/image.png",
-  "external_url": "https://your-site.com",
+  "name": "TYR9",
+  "symbol": "TYR9",
+  "description": "One Hand. One War. One God. $TYR9 is the Solana memecoin forged in the fire of Norse legend. Inspired by Tyr — the one-handed god of war, justice, and unbreakable honor — this token carries zero taxes, renounced ownership, and burned liquidity. A true warrior’s coin for the next bull run.",
+  "image": "https://i.ibb.co/fWqn2Qg/Adobe-Express-file-1.png   ",
+  "external_url": "https://www.tyr9.com",
   "attributes": [
     {
-      "trait_type": "Category",
-      "value": "Utility"
+      "trait_type": "Theme",
+      "value": "Norse Mythology"
     },
     {
-      "trait_type": "Rarity",
-      "value": "Common"
+      "trait_type": "God",
+      "value": "Tyr"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Memecoin"
+    },
+    {
+      "trait_type": "Taxes",
+      "value": "0%"
+    },
+    {
+      "trait_type": "Liquidity",
+      "value": "Burned"
+    },
+    {
+      "trait_type": "Ownership",
+      "value": "Renounced"
     }
   ],
   "properties": {
     "files": [
       {
-        "uri": "https://example.com/additional-file.pdf",
-        "type": "application/pdf"
+        "uri": "https://www.tyr9.com/images/tyr9-logo.png",
+        "type": "image/png"
       }
     ],
     "category": "image"
   },
   "collection": {
-    "name": "Your Collection Name",
-    "family": "Your Token Family"
+    "name": "Norse Gods Series",
+    "family": "Solana Memecoins"
   }
 }
